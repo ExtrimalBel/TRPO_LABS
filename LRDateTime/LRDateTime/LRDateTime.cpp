@@ -22,6 +22,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	catch (Ex::WrongDate &Ex)
 	{
 		std::cout << Ex.Message << std::endl;
+		return -1;
 	}
 	std::cout << "введите имя файла в котором будем искать сообщения" << std::endl;
 	std::string FileName;
